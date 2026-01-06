@@ -1,0 +1,51 @@
+$ mkdir testing_langchain
+$ cd testing_langchain
+$ python3 -m venv langchain_venv
+$ ls
+langchain_venv/
+$ source langchain_venv/bin/activate
+$ which pip3
+/Users/myuser/home/testing_langchain/langchain_venv/bin/pip3
+$ which python3
+/Users/myuser/home/testing_langchain/langchain_venv/bin/python3
+$ pip3 list
+Package Version
+------- -------
+pip     24.3.1
+
+
+################################
+# install all at once 
+pip3 install -r requirements.txt
+
+################################
+# read env vars from .env file
+pip install dotenv 
+
+# lang graph API
+pip install langgraph 
+
+# parse pdf to text
+pip install pypdf
+
+# vector database
+pip install langchain-chroma
+
+# gemeni
+pip install langchain-google-genai
+
+# for open ai
+# pip install langchain_openai 
+
+# 
+pip install langchain_community
+
+# to download papers
+pip install arxiv
+
+### download research papers
+mkdir research_papers
+python3 download_papers.py
+
+# run 
+python3 multi_agent.py
